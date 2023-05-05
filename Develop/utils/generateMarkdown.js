@@ -54,6 +54,8 @@ function renderTableOfContents(data) {
 - [Credits](#credits)
 - [License](#license)
 - [Deployed Application](#link)
+- [Tests](#tests)
+- [Questions](#questions)
     `
   }
   return ''
@@ -64,6 +66,7 @@ function renderLink(data) {
   }
   return `
 ## Link to Deployed Page
+
 [Live Page](${data})`
 }
 
@@ -97,6 +100,19 @@ ${data.credits}
 ${renderLicenseSection(data.license)}
 ${renderLicenseDescr(data.license)}
 ${renderLink(data.link)}
+
+---
+
+## Contributing
+${data.contribute}
+## Tests
+${data.test}
+## Questions:
+If you have any questions, reach out to me at the following:
+
+[Github](https://github.com/${data.github})
+
+Email: ${data.email}
 `;
 }
 

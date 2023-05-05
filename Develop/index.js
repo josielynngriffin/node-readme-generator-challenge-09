@@ -46,7 +46,30 @@ const questions = [
         type:'input',
         message:'Give a link to your deployed application(hit enter to skip if your application is not live!):',
         name:'link',
+    },
+    {
+        type:'input',
+        message:'List any information about contributing to your project:',
+        name:'contribute',
+        default:'N/A',
+    },
+    {
+        type:'input',
+        message:'List any testing information:',
+        name:'test',
+        default:'N/A',
+    },
+    {
+        type:'input',
+        message:'List your github profile:',
+        name:'github',
+    },
+    {
+        type:'input',
+        message:'List your email:',
+        name:'email',
     }
+    
 
 ];
 
@@ -64,7 +87,6 @@ function writeToFile(fileName, data) {
 function init() {
     inquirer.prompt(questions)
 .then(data => {
-    console.log(data);
     writeToFile('README.md', generateMarkdown(data))
 })
 }
