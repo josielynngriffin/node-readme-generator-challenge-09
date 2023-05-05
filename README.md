@@ -29,7 +29,13 @@ I recieved the starter code for this assignment from: [Starter Code](https://git
 I used this resource for the license badges and their links: [License Badge Markdown](https://gist.github.com/lukas-h/2a5d00690736b4c3a7ba)
 
 ## Screenshots
+Ordered from the prompt in the terminal, the markdown within the file, to the preview of the generated README file.
 
+![Command Line Screenshot](./Develop/assets/img/command-line.png)
+
+![Markdown File Screenshot](./Develop/assets/img/markdown-file.png)
+
+![README Preview](./Develop/assets/img/readme-preview.png)
 ## Video Walkthrough
 This video shows usage and functionality only. For installation, follow the above steps.
 [Google Drive](https://drive.google.com/file/d/1V8fbmulMGAr4tggGb0Dcibv4sQq6wice/view)
