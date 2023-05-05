@@ -44,6 +44,27 @@ function renderLicenseDescr(license) {
   }
   
 }
+function renderTableOfContents(data) {
+  let tableOfContents = data.tableOfContents;
+  if(tableOfContents === true) {
+    return `
+## Table of Contents
+- [Installation](#installation)
+- [Usage](#usage)
+- [Credits](#credits)
+- [License](#license)
+- [Deployed Application](#link)
+    `
+  }
+  return ''
+}
+function renderLink(data) {
+  if(data === '') {
+    return ''
+  }
+  return `## Link to Deployed Page
+  [Live Page](${data})`
+}
 
 // TODO: Create a function that returns the license section of README
 // If there is no license, return an empty string
