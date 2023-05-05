@@ -60,10 +60,11 @@ function renderTableOfContents(data) {
 }
 function renderLink(data) {
   if(data === '') {
-    return ''
+    return ``
   }
-  return `## Link to Deployed Page
-  [Live Page](${data})`
+  return `
+## Link to Deployed Page
+[Live Page](${data})`
 }
 
 // TODO: Create a function that returns the license section of README
@@ -72,13 +73,30 @@ function renderLicenseSection(license) {
   if(license === 'N/A') {
     return ''
   }
-  return '## License'
+  return `
+## License`
 
 }
 
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
   return `# ${data.title}
+${renderLicenseBadge(data.license)}
+## Description
+${data.description}
+${renderTableOfContents(data)}
+
+## Installation
+${data.installation}
+
+## Usage
+${data.usage}
+
+## Credits
+${data.credits}
+${renderLicenseSection(data.license)}
+${renderLicenseDescr(data.license)}
+${renderLink(data.link)}
 `;
 }
 
